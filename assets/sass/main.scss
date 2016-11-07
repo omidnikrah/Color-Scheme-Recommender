@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	text-align: center;
+	font-family: 'Coming Soon', cursive;
+	background-color: #FDFDFD;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input{
+	outline: 0;
+	border: 0;
+}
+/*-------------------- MIXINS -----------------------*/
+
+@mixin transition($speed,$type) {
+    -webkit-transition: all $speed $type;
+    -moz-transition: all $speed $type;
+    -ms-transition: all $speed $type;
+    -o-transition: all $speed $type;
+    transition: all $speed $type;
+}
+
+/*-------------------- Red -----------------------*/
+
+$red-list: (
+  #ffe3e3,
+  #ffc9c9,
+  #ffa8a8,
+  #ff8787,
+  #ff6b6b,
+  #fa5252,
+  #f03e3e,
+  #e03131,
+  #c92a2a
+);
+@for $i from 1 through length($red-list) {
+    .red-#{$i} {
+        background-color: nth($red-list,$i);
+    }
+}
+
+/*-------------------- Green -----------------------*/
+
+$green-list: (
+  #d3f9d8,
+  #b2f2bb,
+  #8ce99a,
+  #69db7c,
+  #51cf66,
+  #40c057,
+  #37b24d,
+  #2f9e44,
+  #2b8a3e
+);
+@for $i from 1 through length($green-list) {
+    .green-#{$i} {
+        background-color: nth($green-list,$i);
+    }
+}
+
+/*-------------------- Blue -----------------------*/
+
+$blue-list: (
+  #ccedff,
+  #a3daff,
+  #72c3fc,
+  #4dadf7,
+  #329af0,
+  #228ae6,
+  #1c7cd6,
+  #1b6ec2,
+  #1862ab
+);
+@for $i from 1 through length($blue-list) {
+    .blue-#{$i} {
+        background-color: nth($blue-list,$i);
+    }
+}
+
+/*-------------------- Yellow -----------------------*/
+
+$yellow-list: (
+  #fff3bf,
+  #ffec99,
+  #ffe066,
+  #ffd43b,
+  #fcc419,
+  #fab005,
+  #f59f00,
+  #f08c00,
+  #e67700
+);
+@for $i from 1 through length($yellow-list) {
+    .yellow-#{$i} {
+        background-color: nth($yellow-list,$i);
+    }
+}
+
+/*-------------------- Orange -----------------------*/
+
+$orange-list: (
+  #ffe8cc,
+  #ffd8a8,
+  #ffc078,
+  #ffa94d,
+  #ff922b,
+  #fd7e14,
+  #f76707,
+  #e8590c,
+  #d9480f
+);
+@for $i from 1 through length($orange-list) {
+    .orange-#{$i} {
+        background-color: nth($orange-list,$i);
+    }
+}
+
+/*-------------------- Lime -----------------------*/
+
+$lime-list: (
+  #e9fac8,
+  #d8f5a2,
+  #c0eb75,
+  #a9e34b,
+  #94d82d,
+  #82c91e,
+  #74b816,
+  #66a80f,
+  #5c940d
+);
+@for $i from 1 through length($lime-list) {
+    .lime-#{$i} {
+        background-color: nth($lime-list,$i);
+    }
+}
+
+/*-------------------- Teal -----------------------*/
+
+$teal-list: (
+  #c3fae8,
+  #96f2d7,
+  #63e6be,
+  #38d9a9,
+  #20c997,
+  #12b886,
+  #0ca678,
+  #099268,
+  #087f5b
+);
+@for $i from 1 through length($teal-list) {
+    .teal-#{$i} {
+        background-color: nth($teal-list,$i);
+    }
+}
+
+/*-------------------- Violet -----------------------*/
+
+$violet-list: (
+  #e5dbff,
+  #d0bfff,
+  #b197fc,
+  #9775fa,
+  #845ef7,
+  #7950f2,
+  #7048e8,
+  #6741d9,
+  #5f3dc4
+);
+@for $i from 1 through length($violet-list) {
+    .violet-#{$i} {
+        background-color: nth($violet-list,$i);
+    }
+}
+
+/*-------------------- Grape -----------------------*/
+
+$grape-list: (
+  #f3d9fa,
+  #eebefa,
+  #e599f7,
+  #da77f2,
+  #cc5de8,
+  #be4bdb,
+  #ae3ec9,
+  #9c36b5,
+  #862e9c
+);
+@for $i from 1 through length($grape-list) {
+    .grape-#{$i} {
+        background-color: nth($grape-list,$i);
+    }
+}
+/*-------------------- Gray -----------------------*/
+
+$gray-list: (
+  #f1f3f5,
+  #e9ecef,
+  #dee2e6,
+  #ced4da,
+  #adb5bd,
+  #868e96,
+  #495057,
+  #343a40,
+  #212529
+);
+@for $i from 1 through length($gray-list) {
+    .gray-#{$i} {
+        background-color: nth($gray-list,$i);
+    }
+}
+
+/*-----------------------------------------------------*/
+
+.container{
+	padding: 50px;
+	#head-title{
+		font-size: 45px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	#head-description{
+		font-size: 30px;
+	}
+	#recommender-form{
+		margin-top: 50px;
+		input[type="text"]{
+			font-family: 'Coming Soon', cursive;
+			padding: 20px;
+			width: 30%;
+			font-size: 15px;
+			border-radius: 3px;
+			box-shadow: 0 0 2px rgba(0,0,0,0.2);
+			color: #444;
+			@include transition(300ms,ease-in-out);
+			&:focus{
+				outline: 0;
+				width: 30.7%;
+				box-shadow: 0 0 30px rgba(0,0,0,0.2);
+				background-color: rgba(0,0,0,0.01);
+			}
+		}
+	}
+	#palettes{
+		margin-top: 50px;
+		display: inline-block;
+	}
+}
+
+.color-palette{
+	margin-top: 10px;
+	padding: 5px 5px 40px;
+	background-color: #ffffff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	border-radius: 3px;
+	float: right;
+	clear: both;
+  display: none;
+  position: relative;
+
+	.color{
+		width: 100px;
+		height: 50px;
+		float: left;
+	}
+  &:after{
+    content: attr(data-cat);
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+  }
+}
+.block{
+  display:block !important;
+}
+.custom-color-1{
+  background-color: #2F1B41;
+}
+.custom-color-2{
+  background-color: #872341;
+}
+.custom-color-3{
+  background-color: #BE3144;
+}
+.custom-color-4{
+  background-color: #F05941;
+}
+.custom-color-5{
+  background-color: #27BEC4;
+}
