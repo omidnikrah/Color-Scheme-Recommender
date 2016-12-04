@@ -396,15 +396,30 @@ input {
 
 .custom-color-5 {
   background-color: #27BEC4; }
-  .classic-custom-color-1{
-    background-color: #faeed4;
-  }
-  .classic-custom-color-2{
-    background-color: #b41736;
-  }
-  .classic-custom-color-3{
-    background-color: #054062;
-  }
-  .classic-custom-color-4{
-    background-color: #586578;
-  }
+
+.classic-custom-color-1 {
+  background-color: #faeed4; }
+
+.classic-custom-color-2 {
+  background-color: #b41736; }
+
+.classic-custom-color-3 {
+  background-color: #054062; }
+
+.classic-custom-color-4 {
+  background-color: #586578; }
+
+.nature-custom-color-1 {
+  background-color: #b89244; }
+
+.nature-custom-color-2 {
+  background-color: #bcc87c; }
+
+.nature-custom-color-3 {
+  background-color: #979d3d; }
+
+.nature-custom-color-4 {
+  background-color: #e98d3f; }
+
+.nature-custom-color-5 {
+  background-color: #e3c44f; }
