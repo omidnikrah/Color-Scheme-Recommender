@@ -300,6 +300,8 @@ $gray-list: (
 		width: 100px;
 		height: 50px;
 		float: left;
+    margin: 5px;
+    border-radius: 3px;
 	}
   &:after{
     content: attr(data-cat);

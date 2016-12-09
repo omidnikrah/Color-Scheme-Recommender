@@ -371,7 +371,9 @@ input {
   .color-palette .color {
     width: 100px;
     height: 50px;
-    float: left; }
+    float: left;
+    margin: 5px;
+    border-radius: 3px; }
   .color-palette:after {
     content: attr(data-cat);
     position: absolute;
