@@ -302,6 +302,17 @@ $gray-list: (
 		float: left;
     margin: 5px;
     border-radius: 3px;
+    position: relative;
+    .color-code{
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+      -webkit-transform: translate(50%,-50%);
+      color: rgba(0,0,0,0.4);
+      opacity: 0;
+      @include transition(300ms,ease-in-out);  
+    }
 	}
   &:after{
     content: attr(data-cat);

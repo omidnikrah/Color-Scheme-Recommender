@@ -373,7 +373,17 @@ input {
     height: 50px;
     float: left;
     margin: 5px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    position: relative; }
+    .color-palette .color .color-code {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      -webkit-transform: translate(50%, -50%);
+      color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: all 300ms ease-in-out; }
   .color-palette:after {
     content: attr(data-cat);
     position: absolute;
